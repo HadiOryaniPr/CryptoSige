@@ -1,6 +1,6 @@
 # CryptoSig
 
 <h1> 
-  Online View
-  <a href="https://hadioryanipr.github.io/CryptoSig/"></a>
+
+  <a href="https://hadioryanipr.github.io/CryptoSig/">Online View</a>
 </h1>
