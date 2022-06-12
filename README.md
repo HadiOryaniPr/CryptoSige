@@ -1,2 +1,2 @@
 # CryptoSige
-<a href="https://hadioryanipr.github.io/CryptoSige/SRC/index.hrml">online view</a>
+<a href="https://hadioryanipr.github.io/CryptoSige/src">online view</a>
