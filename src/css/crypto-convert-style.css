@@ -31,7 +31,7 @@
   }
   form input:focus{
     padding: 0 14px;
-    border: 2px solid #FBBF24;
+    border: 2px solid #826AED;
   }
   form .drop-list{
     display: flex;
@@ -82,9 +82,9 @@
     color: #000;
     font-size: 17px;
     cursor: pointer;
-    background: rgb(245, 158, 11);
+    background: #826AED;
     transition: 0.3s ease;
   }
   form button:hover{
-    background: #FBBF24;
+    background: #826AED;
   }

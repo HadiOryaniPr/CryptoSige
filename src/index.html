@@ -24,9 +24,9 @@
         class="container flex flex-wrap justify-between items-center mx-auto"
       >
         <a href="#" class="flex items-center">
-         <i class="fas fa-dragon text-amber-500 text-5xl mr-4 md:mr-5"></i>
+         <i class="fas fa-dragon text-primary text-5xl mr-4 md:mr-5"></i>
           <span
-            class="self-center  text-xl font-semibold whitespace-nowrap dark:text-amber-500"
+            class="self-center  text-xl font-semibold whitespace-nowrap dark:text-primary"
             >CryptoSige</span
           >
         </a>
@@ -48,7 +48,7 @@
               <li>
                 <a
                   href="#"
-                  class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                  class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
                   aria-current="page"
                   >تماس با ما</a
                 >
@@ -56,7 +56,7 @@
               <li>
                 <a
                 href="#"
-                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
                 aria-current="page"
                   >درباره ما</a
                 >
@@ -64,7 +64,7 @@
               <li>
                 <a
                 href="#"
-                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
                 aria-current="page"
                   >کانال سیگنال</a
                 >
@@ -73,7 +73,7 @@
               <li>
                 <a
                 href="#"
-                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
                 aria-current="page"
                   >اشتراک ها</a
                 >
@@ -82,7 +82,7 @@
               <li>
                 <a
                 href="#"
-                class="block text-gray-300 py- md:bg-amber-500 px-3 md:text-slate-900 rounded md:border-none md:py-0"
+                class="block text-gray-300 py- md:bg-primary px-3 md:text-slate-900 rounded md:border-none md:py-0"
                 aria-current="page"
                   >خانه</a
                 >
@@ -91,7 +91,7 @@
           </div>
     </nav>
 
-    <section class="flex justify-evenly items-center flex-col-reverse md:flex-row bg-yellow-400 h-full">
+    <section class="flex justify-evenly items-center flex-col-reverse md:flex-row bg-slate-900 h-full">
 
       <div class="md:mt-28 pb-10 md:pb-0">
         <div class="wrapper">
@@ -136,8 +136,8 @@
       </div>
 
       <div class="flex flex-col items-center z-10">
-        <h1 class="text-5xl mt-40 md:text-[5rem] lg:text-9xl font-thin -skew-x-12 bg-amber-500">کریپتو سیج</h1>
-        <p class="text-xl text-center mt-[3rem] underline underline-offset-8 decoration-amber-500">سیگنال رایگان بگیر, سود کن , لذتشو ببر</p>
+        <h1 class="text-5xl mt-40 md:text-[5rem] lg:text-9xl font-thin -skew-x-12 bg-primary text-white">کریپتو سیج</h1>
+        <p class="text-xl text-center mt-[3rem] underline underline-offset-8 decoration-primary text-white">سیگنال رایگان بگیر, سود کن , لذتشو ببر</p>
         <img src="./images/Untitled-2.png" class="" alt="CryptoSige">
       </div>
 
@@ -145,9 +145,9 @@
 
     <!-- live price title -->
     <h1 class="text-2xl md:text-5xl font-thin text-center mt-10">
-      <i class="fas fa-dragon  text-amber-500"></i>
+      <i class="fas fa-dragon  text-primary"></i>
       قیمت زنده ارزهای دیجیتال
-      <i class="fas fa-dragon text-amber-500"></i>
+      <i class="fas fa-dragon text-primary"></i>
     </h1>
 
     <!-- price table -->
@@ -162,12 +162,9 @@
          <th scope="col" class="px-6 py-3">
         Price
         </th>
-        <th scope="col" class="px-6 py-3">
+        <th scope="col" class="px-6 py-3 hidden md:block">
         Checkout on tradingview
         </th>
-        <th scope="col" class="px-6 py-3">
-         changes
-          </th>
       </tr>
         </thead>
         <tbody>
@@ -176,93 +173,71 @@
         Bitcoin
         </th>
         <td class="px-6 py-4" id="btc-price"></td>
-        <td class="px-6 py-4">
+        <td class="px-6 py-4 hidden md:block">
           <button class="flex">
-            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BITSTAMP%3ABTCUSD" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BITSTAMP%3ABTCUSD" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
           </button>
-        </td>
-        <td>
-          test
         </td>
         </tr>
         <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-primary whitespace-nowrap">
         Ethereum
         </th>
         <td class="px-6 py-4" id="ether-price">
        
         </td>
-        <td class="px-6 py-4">
+        <td class="px-6 py-4 hidden md:block">
           <button class="flex">
-            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=COINBASE%3AETHUSD" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=COINBASE%3AETHUSD" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
           </button>
         </td>
-        <td>
-          test
-        </td>
         </tr>
-        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-800">
         <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
           Tether
         </th>
-        <td class="px-6 py-4" id="tether-price">
-       
-        </td>
-        <td class="px-6 py-4">
+        <td class="px-6 py-4" id="tether-price"></td>
+        <td class="px-6 py-4 hidden md:block">
           <button class="flex">
-            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3AUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3AUSDT" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
           </button>
-        </td>
-        <td>
-          test
         </td>
         </tr>
         <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-primary whitespace-nowrap">
         Solana
         </th>
         <td class="px-6 py-4" id="solana-price">
         
         </td>
-        <td class="px-6 py-4">
+        <td class="px-6 py-4 hidden md:block">
           <button class="flex">
-            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3ASOL" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3ASOL" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
           </button>
-        </td>
-          <td>
-          test
         </td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
         <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
         Maker
         </th>
-        <td class="px-6 py-4" id="maker-price">
-        
-        </td>
-        <td class="px-6 py-4">
+        <td class="px-6 py-4" id="maker-price"></td>
+        <td class="px-6 py-4  hidden md:block">
           <button class="flex">
-            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AMKRUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AMKRUSDT" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
           </button>
-        </td>
-        <td>
-          test
         </td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-primary whitespace-nowrap">
             ApeCoin
           </th>
           <td class="px-6 py-4" id="apecoin-price">
           
           </td>
-          <td class="px-6 py-4">
+          <td class="px-6 py-4  hidden md:block">
             <button class="flex">
-              <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AAPEUSDT" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+              <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AAPEUSDT" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
             </button>
-          </td>
-          <td>
-            test
           </td>
           </tr>
           <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
@@ -272,27 +247,21 @@
             <td class="px-6 py-4" id="tron-price">
             
             </td>
-            <td class="px-6 py-4">
+            <td class="px-6 py-4  hidden md:block">
               <button class="flex">
-                <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BINANCE%3ATRXUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+                <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BINANCE%3ATRXUSDT" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
               </button>
-            </td>
-            <td>
-              test
             </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-primary whitespace-nowrap">
               Uniswap
               </th>
               <td class="px-6 py-4" id="uniswap-price"></td>
-              <td class="px-6 py-4">
+              <td class="px-6 py-4  hidden md:block">
                 <button class="flex">
-                  <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AUNIUSDT" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+                  <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AUNIUSDT" target="_blank" class="bg-primary px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
                 </button>
-              </td>
-              <td>
-                test
               </td>
               </tr>
         </tbody>
