@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/crypto-convert-style.css">
+  </head>
+  <body>
+    <nav
+      class="fixed w-full bg-white border-gray-200 px-2 sm:px-4 p-3 dark:bg-gray-800 z-50"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#" class="flex items-center">
+         <i class="fas fa-dragon text-amber-500 text-5xl mr-4 md:mr-5"></i>
+          <span
+            class="self-center  text-xl font-semibold whitespace-nowrap dark:text-amber-500"
+            >CryptoSig</span
+          >
+        </a>
+
+        <button
+        id="hamburger"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-300 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+        <i class="fas fa-bars text-[1.5rem]"></i>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+            <ul
+              class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                  aria-current="page"
+                  >تماس با ما</a
+                >
+              </li>
+              <li>
+                <a
+                href="#"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                aria-current="page"
+                  >درباره ما</a
+                >
+              </li>
+              <li>
+                <a
+                href="#"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                aria-current="page"
+                  >کانال سیگنال</a
+                >
+              </li>
+  
+              <li>
+                <a
+                href="#"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-amber-400 md:border-none"
+                aria-current="page"
+                  >اشتراک ها</a
+                >
+              </li>
+
+              <li>
+                <a
+                href="#"
+                class="block text-gray-300 py- md:bg-amber-500 px-3 md:text-slate-900 rounded md:border-none md:py-0"
+                aria-current="page"
+                  >خانه</a
+                >
+              </li>
+            </ul>
+          </div>
+    </nav>
+
+    <section class="flex justify-evenly items-center flex-col-reverse md:flex-row bg-yellow-400 h-full">
+
+      <div class="md:mt-28 pb-10 md:pb-0">
+        <div class="wrapper">
+          <header>آسان بخر , آسان بفروش</header>
+          <form action="#">
+            <div class="amount text-right">
+              <p>مقدار را وارد کنید</p>
+              <input type="text" placeholder="0.00000000">
+            </div>
+            <div class="drop-list">
+          
+              <div class="to  font-bold">
+                <p>دریافت می کنید</p>
+                <div class="select-box">
+                  <select>
+                    <option value="تومان">تومان</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+              <div class="from text-right font-bold">
+                <p>میپردازید</p>
+                <div class="select-box">
+                  <select>
+                    <option value="Bitcoin">Bitcoin</option>
+                  </select>
+                </div>
+              </div>
+
+           
+            </div>
+            <div class="exchange-rate text-right font-bold">: مساوی با</div>
+            <div class="exchange-rate text-right font-bold">
+              $هر بیت کوین معادل
+             : <span id="live-btc-price"></span>
+            </div>
+            <button class="font-bold">تبدیل کن</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center z-10">
+        <h1 class="text-5xl mt-40 md:text-[5rem] lg:text-9xl font-thin -skew-x-12 bg-amber-500">کریپتو سیگ</h1>
+        <p class="text-xl text-center mt-[3rem] underline underline-offset-8 decoration-amber-500">سیگنال رایگان بگیر, سود کن , لذتشو ببر</p>
+        <img src="./images/Untitled-2.png" class="" alt="CryptoSig">
+      </div>
+
+    </section>
+
+    <!-- live price title -->
+    <h1 class="text-2xl md:text-5xl font-thin text-center mt-10">
+      <i class="fas fa-dragon  text-amber-500"></i>
+      قیمت زنده ارزهای دیجیتال
+      <i class="fas fa-dragon text-amber-500"></i>
+    </h1>
+
+    <!-- price table -->
+    <section class="flex justify-center items-center mt-5 md:mt-[5rem]">
+      <div class="flex overflow-x-auto justify-center shadow-md rounded">
+        <table class="w-2 md:w-[1200px] text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+        <th scope="col" class="px-6 py-3">
+        CryptoName
+        </th>
+         <th scope="col" class="px-6 py-3">
+        Price
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Checkout on tradingview
+      </tr>
+        </thead>
+        <tbody>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+        Bitcoin
+        </th>
+        <td class="px-6 py-4" id="btc-price"></td>
+        <td class="px-6 py-4">
+          <button class="flex">
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BITSTAMP%3ABTCUSD" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+          </button>
+        </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+        Ethereum
+        </th>
+        <td class="px-6 py-4" id="ether-price">
+       
+        </td>
+        <td class="px-6 py-4">
+          <button class="flex">
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=COINBASE%3AETHUSD" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+          </button>
+        </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+          Tether
+        </th>
+        <td class="px-6 py-4" id="tether-price">
+       
+        </td>
+        <td class="px-6 py-4">
+          <button class="flex">
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3AUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+          </button>
+        </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+        Solana
+        </th>
+        <td class="px-6 py-4" id="solana-price">
+        
+        </td>
+        <td class="px-6 py-4">
+          <button class="flex">
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=CRYPTOCAP%3ASOL" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+          </button>
+        </td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+        Maker
+        </th>
+        <td class="px-6 py-4" id="maker-price">
+        
+        </td>
+        <td class="px-6 py-4">
+          <button class="flex">
+            <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AMKRUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+          </button>
+        </td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+            ApeCoin
+          </th>
+          <td class="px-6 py-4" id="apecoin-price">
+          
+          </td>
+          <td class="px-6 py-4">
+            <button class="flex">
+              <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AAPEUSDT" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+            </button>
+          </td>
+          </tr>
+          <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            TRON
+            </th>
+            <td class="px-6 py-4" id="tron-price">
+            
+            </td>
+            <td class="px-6 py-4">
+              <button class="flex">
+                <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=BINANCE%3ATRXUSDT" target="_blank" class="bg-yellow-400 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+              </button>
+            </td>
+            </tr>
+            <tr class="odd:bg-white even:bg-gray-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-yellow-400 whitespace-nowrap">
+              Uniswap
+              </th>
+              <td class="px-6 py-4" id="uniswap-price"></td>
+              <td class="px-6 py-4">
+                <button class="flex">
+                  <a href="https://www.tradingview.com/chart/7bQWz7jS/?symbol=KUCOIN%3AUNIUSDT" target="_blank" class="bg-amber-500 px-5 rounded text-slate-900 font-bold">کلیک کنید</a>
+                </button>
+              </td>
+              </tr>
+        </tbody>
+        </table>
+        </div>
+        
+    </section>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/converter.js"></script>
+
+    <script>
+    let livePrice = {
+    "async": true,
+    "scroosDomain": true,
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2C%2Ctether%2Csolana%2Ctron%2Cuniswap%2Capecoin%2Cmaker&vs_currencies=usd",
+    "method": "GET",
+    "headers": {}
+}
+
+const btcPrice = document.getElementById('btc-price');
+const etherPrice = document.getElementById('ether-price');
+const tetherPrice = document.getElementById('tether-price');
+const solanaPrice = document.getElementById('solana-price');
+const makerPrice = document.getElementById('maker-price');
+const apecoinPrice = document.getElementById('apecoin-price');
+const tronPrice = document.getElementById('tron-price');
+const uniswapPrice = document.getElementById('uniswap-price');
+const liveBtcPrice = document.getElementById('live-btc-price');
+
+$.ajax(livePrice).done(function (response) {
+  btcPrice.innerHTML = response.bitcoin.usd;
+  etherPrice.innerHTML = response.ethereum.usd;
+  tetherPrice.innerHTML = response.tether.usd;
+  solanaPrice.innerHTML = response.solana.usd;
+  makerPrice.innerHTML = response.maker.usd;
+  apecoinPrice.innerHTML = response.apecoin.usd;
+  tronPrice.innerHTML = response.tron.usd;
+  uniswapPrice.innerHTML = response.uniswap.usd;
+  liveBtcPrice.innerHTML = response.bitcoin.usd;
+});
+
+
+    </script>
+  </body>
+</html>
