@@ -4,7 +4,10 @@ module.exports = {
     extend: {
       colors : {
         "primary" : "#DB2763"
-      }
+      },
+      screens: {
+        'sm2': {'min': '768px', 'max': '1056px'},
+    }
     },
   },
   plugins: [],
