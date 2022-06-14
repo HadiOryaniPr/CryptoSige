@@ -7,6 +7,9 @@ module.exports = {
       },
       screens: {
         'sm2': {'min': '768px', 'max': '1056px'},
+    },
+    height: {
+      '94': '23.3rem',
     }
     },
   },

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>CryptoSige</title>
+    <link rel="stylesheet" href="./css/ptice-table.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/plan-section-style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -25,6 +26,7 @@
 
   </head>
   <body>
+
     <nav
       class="fixed w-full bg-slate-800 px-2 sm:px- 4 p-3 z-50"
     >
@@ -35,7 +37,7 @@
          <i class="fas fa-dragon text-primary text-5xl mr-4 md:mr-5"></i>
           <span
             class="self-center text-xl font-semibold whitespace-nowrap dark:text-primary"
-            >CryptoSige</span
+            >Cryptoiege</span
           >
         </a>
 
@@ -53,6 +55,22 @@
             <ul
               class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
             >
+            <li>
+              <a
+                href="#"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
+                aria-current="page"
+                >ثبت نام</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block border-b py-3 pl-2 md:p-0 dark:text-gray-300 hover:text-primary md:border-none"
+                aria-current="page"
+                >ورود</a
+              >
+            </li>
               <li>
                 <a
                   href="#"
@@ -99,7 +117,7 @@
           </div>
     </nav>
 
-    <section class="flex justify-evenly items-center flex-col-reverse md:flex-row bg-slate-900 h-full">
+    <main class="flex justify-evenly items-center flex-col-reverse md:flex-row bg-slate-900 h-full">
 
       <div class="md:mt-28 pb-10 md:pb-0">
         <div class="wrapper">
@@ -138,30 +156,30 @@
               $هر بیت کوین معادل
              : <span id="live-btc-price"></span>
             </div>
-            <button class="font-bold">تبدیل کن</button>
+            <button class="font-bold text-white">تبدیل کن</button>
           </form>
         </div>
       </div>
 
       <div class="flex flex-col items-center z-10">
-        <h1 class="text-5xl mt-40 md:text-[5rem] lg:text-9xl font-bold text-white">کریپتو سیج</h1>
-        <p class="text-xl text-center mt-[3rem]  p-1 -skew-x-12 bg-primary text-white">مارکت رو تو مشتت بگیر</p>
-        <img src="./images/crypto-main.png" class="" alt="CryptoSige">
+        <h1 class="text-5xl mt-28 md:text-[5rem] lg:text-9xl font-bold text-white">کریپتو سیج</h1>
+        <p class="text-xl text-center mt-[3rem]  px-3 py-1 -skew-x-12 bg-primary text-white">مارکت رو تو مشتت بگیر</p>
+        <img src="./images/bitcoin-stack-4603299.png" class="shadow-lg" width="500px" alt="CryptoSige">
       </div>
 
-    </section>
+    </main>
 
     <!-- live price title -->
-    <h1 class="text-2xl md:text-5xl font-thin text-center mt-10">
+    <h1 class="text-2xl md:text-5xl font-thin text-center mt-5">
       <i class="fas fa-dragon  text-primary"></i>
       قیمت زنده ارزهای دیجیتال
       <i class="fas fa-dragon text-primary"></i>
     </h1>
 
     <!-- price table -->
-    <section class="flex justify-center items-center mt-5 md:mt-[5rem]">
+    <main class="flex justify-center centerx items-center mt-4 md:mt-[3rem]">
       <div class="flex overflow-x-auto justify-center shadow-md rounded">
-        <table class="w-2 md:w-[1200px] text-sm text-left text-gray-500 dark:text-gray-400">
+        <table class="w-2 md:w-[1200px] bg-slate-900 text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
         <tr>
         <th scope="col" class="px-6 py-3">
@@ -276,7 +294,7 @@
         </table>
         </div>
         
-    </section>
+    </main>
 
 
     <div class="plan-section">
@@ -286,11 +304,11 @@
 
       <div class="flex flex-col md:flex-row sm2:flex-col justify-center items-center">
 
-        <div class="bg-gray-100 mt-10 sm2:mx-0  md:mr-0 rounded h-80 w-80 md:w-96 sm:w-96 md:h-96">
+        <div class="bg-gray-100 mt-10 sm2:mx-0 mb-3 md:mb-0 md:mr-0 rounded h-80 w-80 md:w-96 sm:w-96 md:h-94">
           <h3 class="text-center pt-5 font-bold text-3xl">رایگان</h3>
           <h2 class="text-center mt-5">درماه / 0 تومان</h2>
 
-          <div class="bg-gray-300 w-full p-10 h-56 mt-2">  
+          <div class="bg-gray-300 w-full p-10 h-60 mt-2">  
             <ul class="flex flex-col justify-center items-center md: text-[0.9rem]">
             <li class="mt-2">
               <i class="fas fa-check text-green-400  mr-1"></i>
@@ -335,8 +353,8 @@
           <h3 class="text-center pt-5 font-bold text-3xl">معمولی</h3>
           <h2 class="text-center mt-5">درماه / 645.000 تومان</h2>
           
-          <div class="bg-gray-300 w-full p-10 h-56 mt-5">  
-            <ul class="flex flex-col justify-center items-center md:text-[0.9rem]">
+          <div class="bg-gray-300 w-full p-10 h-60 mt-5">  
+            <ul class="flex flex-col justify-center py-2 items-center md:text-[0.9rem]">
             <li class="mt-2">
               <i class="fas fa-check text-green-400 mr-3"></i>
               دیسکورد VIP عضویت در چنل
@@ -348,17 +366,11 @@
             <button class="bg-white text-center block py-2 w-64 mt-4 translate-y-12 rounded text-primary font-bold transition-all duration-200 ease-in hover:bg-primary hover:text-white">شروع کنید</button>
             </ul>
           </div>
-
         </div>
-
       </div>
-
     </div>
 
 
-
-    <script src="./js/app.js"></script>
-    <script src="./js/converter.js"></script>
 
     <script>
     let livePrice = {
@@ -390,8 +402,8 @@ $.ajax(livePrice).done(function (response) {
   uniswapPrice.innerHTML = response.uniswap.usd;
   liveBtcPrice.innerHTML = response.bitcoin.usd;
 });
-
-
     </script>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
