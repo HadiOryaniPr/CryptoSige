@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors : {
-        "primary" : "#EFCA08"
+        "primary" : "#DB2763"
       },
       screens: {
         'sm2': {'min': '768px', 'max': '1056px'},

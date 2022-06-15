@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>CryptoSiege</title>
-    <link rel="stylesheet" href="./css/ptice-table.css">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/ptice-table.css">
     <link rel="stylesheet" href="./css/plan-section-style.css">
+    <link rel="stylesheet" href="./css/about-us-section-style.css">
+    <link rel="stylesheet" href="./css/footer-style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
@@ -164,20 +166,20 @@
       <div class="flex flex-col items-center z-10">
         <h1 class="text-5xl mt-28 md:text-[5rem] lg:text-9xl font-bold text-white">کریپتو سیج</h1>
         <p class="text-xl text-center mt-[3rem]  px-3 py-1 -skew-x-12 bg-primary text-white">مارکت رو تو مشتت بگیر</p>
-        <img src="./images/bitcoin-stack-4603297.png" class="shadow-lg" width="500px" alt="CryptoSige">
+        <img src="./images/bitcoin-stack-4603299.png" class="shadow-lg" width="500px" alt="CryptoSige">
       </div>
 
     </main>
 
     <!-- live price title -->
-    <h1 class="text-2xl md:text-5xl font-thin text-center mt-5">
+    <h1 class="text-2xl md:text-5xl font-th in text-center mt-5">
       <i class="fas fa-dragon  text-primary"></i>
       قیمت زنده ارزهای دیجیتال
       <i class="fas fa-dragon text-primary"></i>
     </h1>
 
     <!-- price table -->
-    <main class="flex justify-center centerx items-center mt-4 md:mt-[3rem]">
+    <section class="flex justify-center centerx items-center mt-4 md:mt-[3rem]">
       <div class="flex overflow-x-auto justify-center shadow-md rounded">
         <table class="w-2 md:w-[1200px] bg-slate-900 text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -294,12 +296,12 @@
         </table>
         </div>
         
-    </main>
+      </section>
 
 
     <div class="plan-section">
       <span class="text-gray-300 block text-center font-semibold text-3xl pt-10">پلن ها</span>
-      <h1 class="text-white text-[2.5rem] font-bold text-center md:mt-10 mt-5">پلن مورد نظرتان را انتخاب کنید</h1>
+      <h1 class="text-white text-[2.5rem] font-bold text-center md:mt-5 mt-5">پلن مورد نظرتان را انتخاب کنید</h1>
       <p class="text-gray-300 text-center px-5 mt-5">کاربر گرامی برای پرداخت با تتر لطفا به پشتیبانی پیام دهید</p>
 
       <div class="flex flex-col md:flex-row sm2:flex-col justify-center items-center" id="plans">
@@ -370,8 +372,38 @@
       </div>
     </div>
 
+    <section class="about-us-section mt-12">
+     <div class="text-center">
+      <h1 class="text-slate-900 p-5 font-bold text-2xl md:text-5xl mt-20  bg-primary inline-block">آسان بخر , آسان بفروش</h1>
+      <p class="text-slate-900 mt-8 py-2 font-semibold text-xl bg-primary">درباره کریپتو سیج بیشتر بدانید</p>
+    </div>
+      <div class="flex flex-col pb-10 gap-5 justify-center items-center md:flex-row mt-10 md:mt-14 px-20">
+        
+        <div class="bg-gray-300 w-full h-60 md:w-1/4 md:h-52 text-center rounded shadow">
+          <i class="fab fa-btc mt-10 text-5xl text-amber-600"></i>
+          <p class="mt-10 font-bold">مشاهده قیمت لحظه ای ارزهای دیجیتال</p>
+        </div>
 
+        <div class="bg-gray-300  w-full h-60 md:w-1/4 md:h-52 text-center rounded shadow">
+          <i class="fas fa-lock text-5xl mt-10 text-green-500"></i>
+          <p class="mt-10 font-bold">امنیت بالا</p>
+        </div>
 
+        <div class="bg-gray-300 w-full h-60 md:w-1/4 md:h-52 text-center rounded shadow">
+          <i class="fas fa-circle-user text-5xl mt-10 text-sky-500"></i>
+          <p class="mt-10 font-bold">پشتیبانی 24 ساعته</p>
+        </div>
+
+        <div class="bg-gray-300 w-full h-60 md:w-1/4 md:h-52 text-center rounded shadow">
+          <i class="fa-solid fa-gauge-simple-high text-5xl mt-10 text-red-500"></i>
+          <p class="mt-10 font-bold">خرید فروش با سرعت بالا</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-style mt-12">
+    
+    </footer>
 
     <script>
     let livePrice = {
